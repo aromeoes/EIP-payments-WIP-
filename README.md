@@ -1,3 +1,4 @@
+
 ---
 eip: <to be assigned>
 title: Multi-Chain Payment Request Standard
@@ -9,6 +10,11 @@ type: Standards Track
 category: ERC
 created: 2025-07-28
 ---
+
+## Pending thinks to think through
+- [ ] In order for this url format to be compatible with QR codes, we would need to have a compact form factor for the JSON. Something like mapping a set of contracts to an int that gets decoded on the wallet
+- [ ] In order for this workflow to make sense, collectors need to create single use addresses for collecting payments. Further research needed to understand if most collectors agree with this workflow
+
 
 ## Abstract
 
@@ -77,7 +83,6 @@ An object containing arbitrary key-value pairs for additional information. The s
 An EIP-712 signature of the payment request data, signed by the payment requestor.
 
 ### EIP-712 Signature Specification (work in progress)
-TODO: research signature format to increase security and enable reputation systems to be built on top
 The signature MUST follow EIP-712 standard with the following structure:
 
 ### Implementation Example
