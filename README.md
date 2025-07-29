@@ -18,7 +18,7 @@ created: 2025-07-28
 
 ## Abstract
 
-This EIP defines a standard for payment requests that extends beyond single-chain single-token transactions. It enables merchants and applications to communicate payment requirements that can be fulfilled using multiple tokens across multiple blockchains, includes expiration mechanisms, and implements signature-based security for request verification.
+This EIP defines a standard URL format for payment requests that extends beyond single-chain single-token transactions enabled by EIP-681. It enables merchants and applications to communicate payment requirements that can be fulfilled using multiple tokens across multiple blockchains, includes expiration mechanisms, and implements signature-based security for request verification.
 
 ## Motivation
 
