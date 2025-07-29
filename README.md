@@ -11,8 +11,8 @@ category: ERC
 created: 2025-07-28
 ---
 
-## Pending thinks to think through
-- [ ] In order for this url format to be compatible with QR codes, we would need to have a compact form factor for the JSON. Something like mapping a set of contracts to an int that gets decoded on the wallet
+## Pending things to think through
+- [ ] In order for this url format to be compatible with QR codes, we would need to have a compact form factor for the JSON. Something like mapping a set of contracts to an int that gets decoded on the wallet. Further research needed to understand if this introduces vulnerabilities.
 - [ ] In order for this workflow to make sense, collectors need to create single use addresses for collecting payments. Further research needed to understand if most collectors agree with this workflow
 
 
