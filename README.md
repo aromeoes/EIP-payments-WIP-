@@ -16,16 +16,16 @@ created: 2025-01-28
 
 ## Abstract
 
-This EIP defines a standard URL format for payment requests that simplifies communication between payment requestors and wallets. It extends the functionality pioneered by EIP-681 to include willingness to accept multiple tokens in multiple chains, expiration and EIP-712 signatures. It also implements a compression mechanisms to keep url length below 500 characters to be friendly towards being displayed in QR codes, and NFC chips.
+This EIP defines a standard URL format for payment requests that simplifies communication between payment requestors and wallets. It extends the functionality pioneered by EIP-681 to include willingness to accept multiple tokens in multiple chains, expiration and signatures. It also implements a compression mechanisms to keep url length below 500 characters to be friendly towards being displayed in QR codes, and NFC chips.
 
 ## Motivation
 
 Current payment request standards like EIP-681 have limitations:
 
 1. **Single-chain focus**: Cannot express acceptance of the same asset across multiple chains
-2. **No expiration mechanism**: Payment requests remain valid indefinitely
-3. **Security concerns**: No cryptographic proof of the payment request origin
-4. **Limited flexibility**: Cannot communicate acceptance of multiple tokens
+2. **Single-token focus**: Cannot express willingness to accept multiple assets
+3. **Security concerns**: No cryptographic proof of the payment request origin makes it prone to phising
+4. **No expiration mechanism**: Payment requests remain valid indefinitely
 
 As the cross-chain ecosystem grows, users hold assets across various networks. This standard enables seamless payment experiences where users can pay with their preferred token on their preferred chain, while merchants can cryptographically sign requests for verification.
 
