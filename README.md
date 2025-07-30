@@ -1,24 +1,22 @@
-
 ---
-eip: <to be assigned>
+eip: tbd
 title: Multi-Chain Payment Request Standard
 description: A standard for payment requests supporting multiple tokens across multiple blockchains with signature verification
-author: @aromeoes
-discussions-to: <URL>
+author: "@aromeoes"
+discussions-to: tbd
 status: Draft
 type: Standards Track
 category: ERC
-created: 2025-07-28
+created: 2025-01-28
 ---
+
 
 ## Pending things to think through
 - [ ] In order for this url format to be compatible with QR codes, we would need to have a compact form factor for the JSON. Something like mapping a set of contracts to an int that gets decoded on the wallet. Further research needed to understand if this introduces vulnerabilities.
-- [ ] In order for this workflow to make sense, collectors need to create single use addresses for collecting payments. Further research needed to understand if most collectors agree with this workflow
-
 
 ## Abstract
 
-This EIP defines a standard URL format for payment requests that extends beyond single-chain single-token transactions enabled by EIP-681. It enables merchants and applications to communicate payment requirements that can be fulfilled using multiple tokens across multiple blockchains, includes expiration mechanisms, and implements signature-based security for request verification.
+This EIP defines a standard URL format for payment requests that simplifies communication between payment requestors and wallets. It extends the functionality pioneered by EIP-681 to include willingness to accept multiple tokens in multiple chains, expiration and EIP-712 signatures. It also implements a compression mechanisms to keep url length below 500 characters to be friendly towards being displayed in QR codes, and NFC chips.
 
 ## Motivation
 
